@@ -1,5 +1,6 @@
 import { apiUrl, HttpCodeStatus } from "../datatype/api";
 import { 
+  AddAnnouncementRequestType,
   announcementValidator, 
   convertBooleanToString, 
   GetAnnounceListResponseType, 
@@ -44,6 +45,39 @@ export default function MainTestApi() {
     } catch (error) {
       throw error;
     }
+  }
+
+  const addAnnouncement = async (addCluster: AddAnnouncementRequestType) => {
+    const url = `${apiUrl}/posts`
+    try {
+      const body = new URLSearchParams();
+      body.append('name', addCluster.name);
+      body.append('email', addCluster.email);
+      body.append('content', addCluster.content);
+      body.append('amount', addCluster.amount.toString());
+
+      if (addCluster.description) {
+        body.append('description', addCluster.description);
+      }
+
+      body.append('currentStatus', convertBooleanToString(addCluster.currentStatus));
+      body.append('createDate', addCluster.createDate.toISOString());
+
+      const response = await fetch(url, {
+        method: 'POST',
+        redirect: 'follow',
+        body,
+      });
+
+      if (response.status !== HttpCodeStatus.NO_CONTENT) {
+        throw `error code : ${response.status} - unexpected error`;
+      }
+
+      return true;
+    } catch (error) {
+      throw error;
+    }
+
   }
 
   const updateAnnouncement = async (updateCluster: GetAnnounceRequestType) => {
@@ -98,6 +132,7 @@ export default function MainTestApi() {
   return {
     getAnnouncementListApi,
     getAnnouncementByIdApi,
+    addAnnouncement,
     updateAnnouncement,
     deleteAnnouncementByIdApi,
   }

@@ -13,6 +13,18 @@ export const announcementValidator = zod.object({
 
 export type GetAnnounceResponseType = zod.infer<typeof announcementValidator>;
 
+export const addAnnouncementValidator = zod.object({
+  name: zod.string().min(1),
+  email: zod.string().email().min(1),
+  content: zod.string().min(1),
+  amount: zod.number().min(1),
+  description: zod.string().optional(),
+  currentStatus: zod.boolean(),
+  createDate: zod.date(),
+});
+
+export type AddAnnouncementRequestType = zod.infer<typeof addAnnouncementValidator>;
+
 export const announcementListValidator = zod.object({
   list: zod.array(announcementValidator),
   total: zod.number(),
