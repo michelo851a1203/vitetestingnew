@@ -112,7 +112,7 @@ export default function MainTestApi() {
     }
   }
 
-  const deleteAnnouncementByIdApi = async (announcementId: string) => {
+  const deleteAnnouncement = async (announcementId: string) => {
     const url = `${apiUrl}/posts/${announcementId}`
     try {
       const response = await fetch(url, {
@@ -134,6 +134,6 @@ export default function MainTestApi() {
     getAnnouncementByIdApi,
     addAnnouncement,
     updateAnnouncement,
-    deleteAnnouncementByIdApi,
+    deleteAnnouncement,
   }
 }
