@@ -20,9 +20,19 @@ okay here to test zod on this application here has its own error here maybe
 2. append coverage about vitest
 3. zod testing about email and object
 
+
+
 ## play nuxt application
-- learn how pages nuxt work
 - build component base via nuxt
+- learn
+
+# 20220730
+
+- [learn composable](https://www.youtube.com/watch?v=bcZM3EogPJE&t=308s)  
+- [vue mastery composable](https://www.vuemastery.com/courses/coding-better-composables/what-is-a-composable)  
+
+
+
 
 
 #### other 
@@ -32,3 +42,4 @@ okay here to test zod on this application here has its own error here maybe
 #### finish
 <finish!>learn how to build eslint with vite application here
 know more about eslint with vite application here(okay!)
+learn how pages nuxt work(finsh)
