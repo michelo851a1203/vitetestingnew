@@ -16,6 +16,7 @@ okay here to test zod on this application here has its own error here maybe
 // check if zod can test array with object on this application
 
 1. test vue-router 
+- before testing vue-router need to learn mock
 2. append coverage about vitest
 3. zod testing about email and object
 
