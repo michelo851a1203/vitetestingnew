@@ -9,3 +9,8 @@
 
 // first need to test zod 
 // need to try unit testing with this application here
+
+okay here to test zod on this application here has its own error here maybe
+
+# 20220729
+// need to test yup on this application here

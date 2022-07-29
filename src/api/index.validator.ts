@@ -8,7 +8,10 @@ export const announcementValidator = zod.object({
   amount: zod.number().min(1),
   description: zod.string().optional(),
   currentStatus: zod.boolean(),
-  createDate: zod.date(),
+  createDate: zod.string().refine((dateString) => {
+  }, {
+    message: 'this muest be date string application'
+  })
 });
 
 export type GetAnnounceResponseType = zod.infer<typeof announcementValidator>;
