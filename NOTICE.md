@@ -28,12 +28,7 @@ okay here to test zod on this application here has its own error here maybe
 
 # 20220730
 
-- [learn composable](https://www.youtube.com/watch?v=bcZM3EogPJE&t=308s)  
-- [vue mastery composable](https://www.vuemastery.com/courses/coding-better-composables/what-is-a-composable)  
-
-
-
-
+- [vue mastery composable](https://www.vuemastery.com/courses/coding-better-composables/what-is-a-composable) 
 
 #### other 
 1. [cypress](https://docs.cypress.io/guides/component-testing/component-framework-configuration#Nuxt)  
@@ -43,3 +38,4 @@ okay here to test zod on this application here has its own error here maybe
 <finish!>learn how to build eslint with vite application here
 know more about eslint with vite application here(okay!)
 learn how pages nuxt work(finsh)
+- [learn composable](https://www.youtube.com/watch?v=bcZM3EogPJE&t=308s)  (okay)
